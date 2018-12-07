@@ -1,0 +1,111 @@
+
+
+#panel
+{
+  width:100%;
+  background-color:lightgrey;
+  position:absolute;
+  background-color:white;
+  /*background-color:blue;*/
+}
+
+#pannelApp
+{
+width:50%;
+margin:auto;
+position:relative;
+border:2px groove grey;
+}
+
+#panelHeader
+{
+  font-size:25px;
+  font-color:blue;
+  padding:15px;
+  background-color:black;
+  color:white;
+}
+
+
+#panelFooter
+{
+  font-size:20px;
+  font-color:blue;
+  padding:15px;
+  background-color:green;
+  color:white;
+}
+
+#panelBody
+{
+  height:300px;
+  overflow-y:auto;
+  font-size:25px;
+  background-color:white;
+  color:blue;
+  border:1px solid black;
+}
+
+ul li
+{
+  list-style-type:none;
+  text-align:left;
+}
+
+#inpTask
+{
+  width:80%;
+  padding:5px;
+  font-size:20px;
+}
+
+#inpButton
+{
+  padding:5px;
+  font-size:20px;
+  margin-left:20px;
+  cursor:pointer;
+}
+
+#inpButton:hover
+{
+ background-color:blue;
+ color:white;
+}
+
+.singleItem
+{
+  background-color:lightgrey;
+  padding:5px;
+  margin:4px;
+  font-size:18px;
+  margin-right:10px;
+  width:95%;
+  font-family:serif;
+
+}
+
+.Open:hover
+{
+  background-color:orange;
+  color:black;
+}
+
+.Completed
+{
+ text-decoration:line-through;
+}
+
+.selectedItems
+{
+  cursor:pointer;
+}
+
+.deleteIcon
+{
+  margin-right:5px;
+  position:absolute;
+  left:90%;
+  color:red;
+  cursor:pointer;
+}

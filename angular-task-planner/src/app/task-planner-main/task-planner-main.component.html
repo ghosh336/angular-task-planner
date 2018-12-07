@@ -1,0 +1,29 @@
+<!--// ************************************************************ Task Planner *************************************************************************
+// Developed By          : Subhashish Ghosh
+// Date                  : 7th Dec 2018
+// Version               : TaskPlanner v_1.0_Release
+// ********************************************* Copy Righted Material. All Rights Reserved *********************************************************** -->
+
+
+<div id="panel">
+  <div id="pannelApp">
+      <div id="panelHeader">{{ panelHeaderText }}</div>
+      <div >
+      <div id="panelBody">
+          <ul>
+             <li *ngFor="let addedTask of TaskList" class="singleItem {{addedTask.taskStatus}}">
+               <span>
+                  <input type="checkbox" class="selectedItems" title="Mark As Completed" (click)="markAsComplete(addedTask)"/>
+              </span>
+                {{addedTask.taskName}}
+                <span class="deleteIcon"><i class="material-icons" (click)="removeTasks(addedTask)">delete</i></span>
+             </li>
+          </ul>
+      </div>
+      <div id="panelFooter">
+        <input id="inpTask" type="text" [(ngModel)]="newTaskName"/>
+        <input id="inpButton" type="button"  value="Add Task"  (click)="addTask()"/>
+      </div>
+      </div>
+  <div>
+</div>
