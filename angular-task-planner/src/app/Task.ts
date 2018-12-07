@@ -1,10 +1,9 @@
 
 
 
-export class Task
-{
-   taskName:string;
-   taskId:number;
-   taskStatus:string;
-   taskPriority:string;
+export class Task {
+   taskName: string;
+   taskNumber: number;
+   taskStatus: string;
+   taskPriority: string;
 }
